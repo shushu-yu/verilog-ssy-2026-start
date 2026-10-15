@@ -1,0 +1,57 @@
+# ============================================
+#  Verilog / SystemVerilog 学习仓库 .gitignore
+#  目的：把 EDA 工具产生的临时文件挡在仓库外
+# ============================================
+
+# ---------- Vivado ----------
+*.jou
+*.log
+*.str
+*.backup*
+*.pbx
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.rpt
+*.xpr.bak
+.Xil/
+.ip_user_files/
+.runs/
+.sim/
+.cache/
+.hw/
+*.hwdef.bak
+webtalk*
+usage_statistics_webtalk*
+vivado_pid*.str
+
+# ---------- 仿真器（ModelSim / Questa / VCS / Icarus）----------
+*.vcd
+*.wlf
+*.fsdb
+*.shm
+*.vpd
+transcript
+work/
+csrc/
+simv
+simv.daidir/
+ucli.key
+novas.*
+verdiLog/
+*.daidir
+
+# ---------- Python（后续写验证脚本会用到）----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------- 操作系统 / 编辑器杂项 ----------
+Thumbs.db
+desktop.ini
+.DS_Store
+*~
+*.swp
+*.tmp

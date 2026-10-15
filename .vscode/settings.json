@@ -1,0 +1,48 @@
+{
+  // ---- 文件类型识别：让 .v / .sv 一打开就是 Verilog 语法高亮 ----
+  "files.associations": {
+    "*.v": "verilog",
+    "*.vh": "verilog",
+    "*.sv": "systemverilog",
+    "*.svh": "systemverilog",
+    "*.svi": "systemverilog"
+  },
+
+  // ---- 编码与换行 ----
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ---- 编辑器：Verilog 社区惯例是 4 空格缩进 ----
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.rulers": [80, 120],
+  "editor.renderWhitespace": "boundary",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.indentation": true,
+
+  // ---- 自动保存，避免"忘存导致上传的是旧版本" ----
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // ---- 终端默认用 Git Bash ----
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // ---- 明确排除 EDA 临时文件，防止它们在资源管理器里刷屏 ----
+  "files.exclude": {
+    "**/.Xil": true,
+    "**/.ip_user_files": true,
+    "**/.runs": true,
+    "**/.sim": true,
+    "**/*.jou": true,
+    "**/*.log": true,
+    "**/*.str": true
+  },
+  "search.exclude": {
+    "**/.Xil": true,
+    "**/.runs": true,
+    "**/.sim": true
+  }
+}
