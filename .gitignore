@@ -42,6 +42,14 @@ novas.*
 verdiLog/
 *.daidir
 
+# ---------- Vivado Simulator (xsim) ----------
+xsim.dir/
+*.wdb
+*.pbw
+*.pb
+webtalk*
+xsim_script.tcl
+
 # ---------- Python（后续写验证脚本会用到）----------
 __pycache__/
 *.py[cod]

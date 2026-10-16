@@ -1,0 +1,43 @@
+{
+  // ============================================================
+  //  VS Code 任务配置
+  //  用法：Ctrl + Shift + B   直接跑当前工程的仿真
+  //        Ctrl + Shift + P  ->  Run Task  ->  选具体任务
+  // ============================================================
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "仿真：half_adder（编译+精化+运行）",
+      "type": "shell",
+      "command": "./run.bat",
+      "options": {
+        "cwd": "${workspaceFolder}/sim/half_adder"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true,
+        "echo": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "波形：打开 half_adder 波形窗口",
+      "type": "shell",
+      "command": "./wave.bat",
+      "options": {
+        "cwd": "${workspaceFolder}/sim/half_adder"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
